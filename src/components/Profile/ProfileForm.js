@@ -18,7 +18,10 @@ const ProfileForm = () => {
 
     // Could Add Validation
 
-    // const url='https://identitytoolkit.googleapis.com/v1/accounts:update?key=[API_KEY]'
+    const google_key = process.env.REACT_APP_GOOGLE_KEY;
+    const url =
+      "https://identitytoolkit.googleapis.com/v1/accounts:update?key=" +
+      google_key;
 
     fetch(url, {
       method: "POST",
