@@ -17,8 +17,6 @@ const ProfileForm = () => {
 
     // const url='https://identitytoolkit.googleapis.com/v1/accounts:update?key=[API_KEY]'
 
-    const url =
-      "https://identitytoolkit.googleapis.com/v1/accounts:update?key=AIzaSyBA780X7zrc5ih825r4ncpukU6gP9kmEX4";
     fetch(url, {
       method: "POST",
       body: JSON.stringify({
